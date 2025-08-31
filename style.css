@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body { 
+  min-width: 570px; 
+  padding: 20px; 
+  font-family: "Oswald", sans-serif; 
+}
+
+#languageContainer {
+  margin-bottom: 15px;
+}
+
+.select {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-family: "Oswald", sans-serif;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#message {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px; 
+  border: none;
+  color: white;
+  background-color: #007BFF;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  border-radius: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.button:hover {
+  background-color: #0056b3; 
+}
+
+.input {
+  padding: 8px 15px;
+  margin-right: 10px; 
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #dddddd;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+h4 a {
+  color: #676767;
+  text-decoration: none;
+}
+
+h4 a:hover {
+  color: #007BFF;
+}

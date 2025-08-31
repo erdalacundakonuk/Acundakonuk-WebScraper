@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acundakonuk Easy Scrape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Google Maps Easy Scrape</h1>
+  <h4>
+    <a href="https://github.com/erdalacundakonuk" target="_blank">Free 2 use web scraper</a> 
+    <a href="https://www.linkedin.com/in/erdal-acundakonuk/" target="_blank">by Erdal Acundakonuk</a>
+  </h4>
+  
+  <div id="message">Checking URL...</div>
+  
+  <!-- Dil seçme dropdown -->
+  <label for="languageSelect">Language:</label>
+  <select id="languageSelect" class="select">
+    <option value="tr">Türkçe</option>
+    <option value="en" selected>English</option>
+    <option value="de">Deutsch</option>
+    <option value="fr">Français</option>
+    <option value="it">Italiano</option>
+  </select>
+
+  <br><br>
+
+  <button id="actionButton" class="button" disabled>Scrape Google Maps</button>
+  <button id="downloadCsvButton" class="button" style="margin-left: 10px;" disabled>Download as CSV</button>
+  <input type="text" id="filenameInput" class="input" placeholder="Enter file name" style="margin-left: 10px;" />
+  
+  <table id="resultsTable">
+    <thead>
+      <tr></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <script src="translate.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
