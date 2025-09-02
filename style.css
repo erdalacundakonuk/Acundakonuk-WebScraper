@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body { 
   min-width: 570px; 
   padding: 20px; 
-  font-family: "Oswald", sans-serif; 
+  font-family: "Roboto", sans-serif; 
 }
 
 #languageContainer {
@@ -14,7 +14,7 @@ body {
   padding: 8px 15px;
   border-radius: 20px;
   border: 1px solid #ddd;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fff;
   cursor: pointer;
 }
@@ -33,7 +33,7 @@ body {
   cursor: pointer; 
   transition: background-color 0.3s ease; 
   border-radius: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .button:hover {
@@ -45,7 +45,7 @@ body {
   margin-right: 10px; 
   border: 1px solid #ddd;
   border-radius: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 table {

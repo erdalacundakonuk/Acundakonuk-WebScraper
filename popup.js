@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var filenameInput = document.getElementById('filenameInput');
 
         if (currentTab && currentTab.url.includes("://www.google.com/maps/search")) {
-            document.getElementById('message').textContent = "Let's scrape Google Maps!";
+            document.getElementById('message').textContent = "Scrape Google Maps!";
             actionButton.disabled = false;
             actionButton.classList.add('enabled');
         } else {
@@ -173,16 +173,18 @@ function scrapeData() {
 function tableToCsv(table) {
     var csv = [];
     var rows = table.querySelectorAll('tr');
-    
     for (var i = 0; i < rows.length; i++) {
         var row = [], cols = rows[i].querySelectorAll('td, th');
-        
         for (var j = 0; j < cols.length; j++) {
-            row.push('"' + cols[j].innerText + '"');
+            // Hücrede tırnak varsa iki tırnakla değiştir
+            var cell = cols[j].textContent.replace(/"/g, '""');
+            // Satır sonu karakterlerini de temizle
+            cell = cell.replace(/\r?\n|\r/g, ' ');
+            row.push('"' + cell + '"');
         }
         csv.push(row.join(','));
     }
-    return csv.join('\n');
+    return csv.join('\r\n'); // Windows için CRLF kullan
 }
 
 // Download the CSV file

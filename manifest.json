@@ -3,7 +3,7 @@
     "name": "Acundakonuk Easy Scrape",
     "version": "1.0",
     "description": "Acundakonuk Easy Scrape by Erdal Acundakonuk",
-    "permissions": ["activeTab", "scripting","storage"],
+    "permissions": ["activeTab", "scripting","storage","scripting"],
     "action": {
       "default_popup": "popup.html"
     },
@@ -11,6 +11,10 @@
       "16": "logo.jpg",
       "48": "logo.jpg",
       "128": "logo.jpg"
-    }
+    },
+    "host_permissions": [
+      "https://www.google.com/maps/*",
+      "https://yandex.com/maps/*"
+    ]
   }
   
